@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("../assets/profilebg.png") no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+/* =========================
+   TOP BANNER
+========================= */
+body > img:first-of-type {
+    width: 86%;
+    height: 260px;
+    display: block;
+    margin: 20px auto 0;
+    object-fit: cover;
+    border-radius: 22px;
+    border: 2px solid #00d9ff;
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.35);
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+body > img:nth-of-type(2) {
+    width: 250px !important;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: -95px auto 15px;
+    border-radius: 50%;
+    border: 6px solid #00d9ff;
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.8);
+    background: #000;
+}
+
+/* =========================
+   NAME SECTION
+========================= */
+div h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #00d9ff;
+    text-shadow: 0 0 18px rgba(0, 217, 255, 0.45);
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+div h1 img {
+    width: 65px !important;
+    height: 65px;
+    margin-left: 15px;
+    vertical-align: middle;
+    border-radius: 14px;
+    background: #fff;
+    padding: 6px;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+}
+
+/* =========================
+   COMMON TABLE STYLE
+========================= */
+table {
+    width: 65%;
+    margin: 28px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(0, 8, 35, 0.9);
+    border: 1px solid #00d9ff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.12);
+}
+
+/* headings */
+table th {
+    text-align: left;
+    padding: 22px 24px;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #00d9ff;
+    border-bottom: 1px solid rgba(0, 217, 255, 0.35);
+    text-transform: uppercase;
+}
+
+/* data cells */
+table td {
+    padding: 18px 24px;
+    font-size: 1.12rem;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(0, 217, 255, 0.15);
+}
+
+/* last border remove */
+table tr:last-child td,
+table tr:last-child th {
+    border-bottom: none;
+}
+
+/* hover */
+table td:hover,
+table th:hover {
+    background: rgba(0, 217, 255, 0.05);
+    transition: 0.3s ease;
+}
+
+/* =========================
+   PROFILE TABLE (1st table)
+========================= */
+
+/* intro row */
+table:first-of-type tr:nth-child(2) {
+    display: block;
+    text-align: center;
+    padding: 20px 24px 10px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.9;
+    border-bottom: 1px solid rgba(0, 217, 255, 0.15);
+}
+
+/* normal info rows */
+table:first-of-type td {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+}
+
+/* social row */
+table:first-of-type tr:last-child td {
+    position: relative;
+    text-align: left;
+    padding: 20px 24px;
+    min-height: 70px;
+}
+
+/* social icons */
+table:first-of-type tr:last-child td a img {
+    width: 34px !important;
+    height: 34px;
+    border-radius: 8px;
+    margin-right: 8px;
+    vertical-align: middle;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.15);
+}
+
+table:first-of-type tr:last-child td a img:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.45);
+}
+
+/* Contact button */
+table:first-of-type tr:last-child td a:last-child {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 40px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #00d9ff, #00a6ff);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 0 18px rgba(0, 217, 255, 0.35);
+    transition: 0.3s ease;
+}
+
+table:first-of-type tr:last-child td a:last-child:hover {
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.65);
+}
+
+/* =========================
+   GOALS TABLE (2nd table)
+========================= */
+
+/* heading */
+table:nth-of-type(2) th {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #00d9ff;
+}
+
+/* goal rows */
+table:nth-of-type(2) td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    font-size: 1.28rem;
+    font-weight: 700;
+    color: #00d9ff;
+    
+    padding: 22px 24px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* hover for goals */
+table:nth-of-type(2) td:hover {
+    background: rgba(0, 217, 255, 0.06);
+}
+
+/* =========================
+   GOALS IMAGES - CIRCLE FIX
+========================= */
+table:nth-of-type(2) td img {
+    width: 80px !important;
+    height: 80px !important;
+    min-width: 80px;
+    object-fit: cover;
+    display: inline-block;
+    border-radius: 50% !important;
+    border: 3px solid #00d9ff;
+    padding: 4px;
+    background: #061124;
+    box-shadow: 0 0 18px rgba(0, 217, 255, 0.45);
+    transition: all 0.3s ease;
+}
+
+/* hover */
+table:nth-of-type(2) td img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 28px rgba(0, 217, 255, 0.85);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1024px) {
+    div h1 {
+        font-size: 2.8rem;
+    }
+
+    table {
+        width: 88%;
+    }
+
+    table:first-of-type tr:last-child td a:last-child {
+        position: static;
+        transform: none;
+        display: inline-block;
+        margin-left: 40px;
+        margin-top: 12px;
+    }}
+
+   
+
+
+@media (max-width: 768px) {
+    body > img:first-of-type {
+        width: 94%;
+        height: 180px;
+    }
+
+    body > img:nth-of-type(2) {
+        width: 180px !important;
+        height: 180px;
+        margin-top: -70px;
+    }
+
+    div h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    div h1 img {
+        width: 50px !important;
+        height: 50px;
+    }
+
+    table th {
+        font-size: 1.4rem;
+    }}
+
+    
+
+    table:first-of-type tr:nth-child(2) {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    table:nth-of-type(2) td {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    table:nth-of-type(2) td img {
+        width: 68px !important;
+        height: 68px !important;
+        min-width: 68px;
+    }

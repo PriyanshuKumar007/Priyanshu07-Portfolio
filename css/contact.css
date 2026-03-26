@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+header {
+  width: 100%;
+  min-height: 55vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
+              url("../assets/laptop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header ke andar jo img hai usko hide kar diya
+   kyunki same image background ban gayi */
+header img {
+  display: none;
+}
+
+header h4 {
+  color: #00ff99;
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 255, 153, 0.3);
+}
+
+header p {
+  font-size: 18px;
+  color: #d9d9d9;
+  max-width: 500px;
+}
+
+/* ================= MAIN SECTION ================= */
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f3d2e, #0b1f18);
+  padding: 60px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* ================= LEFT SIDE INFO ================= */
+main > img {
+  margin-bottom: 7px;
+}
+
+main > a {
+  color: #00ff99;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+main > a:hover {
+  color: #ffffff;
+}
+
+main {
+  font-size: 18px;
+}
+
+/* Social icons line */
+main a img {
+  margin-top: 7px;
+  margin-right: 2px;   /* gap kam kar diya */
+  transition: 0.3s ease;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+main a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.45);
+}
+
+/* "or contact me here" text ko chhota */
+main br + a,
+main br + a + br {
+  font-size: 14px;
+}
+
+/* ================= CONTACT FORM RIGHT SIDE ================= */
+
+/* Yeh "Contact" text wali first div ko heading banaya */
+main > div:first-of-type {
+  width: 90%;
+  max-width: 420px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Form related divs */
+main > div:not(:first-of-type) {
+  width: 80%;
+  max-width: 420px;
+}
+
+/* Right side form ko visually separate karne ke liye */
+main > div:first-of-type,
+main > div:first-of-type ~ div {
+  margin-left: auto;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #dfffee;
+}
+
+/* Inputs and textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  margin-bottom: 18px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00ff99;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ================= WHATSAPP BUTTON ================= */
+.whatsapp-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #25D366, #00ff99);
+  color: #000;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 18px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 22px rgba(37, 211, 102, 0.6);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 38px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 35px;
+    padding: 40px 6%;
+  }
+
+  /* Mobile me form left align ho jaye */
+  main > div:first-of-type,
+  main > div:first-of-type ~ div {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  main > div:first-of-type {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 60px 15px;
+  }
+
+  header h4 {
+    font-size: 17px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .whatsapp-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
