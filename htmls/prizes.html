@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/fav.png" type="image/png">
+    <title>Priyanshu's Acheivements</title>
+    <link rel="stylesheet" href="../css/acheivement.css">
+</head>
+
+<body>
+    <!-- used prizebg.png for background -->
+    <header>
+       
+        <h1>Acheivement Page</h1> <br>
+        Proudly Presented for <br>
+        <h2>Priyanshu Kumar</h2>
+       (all images are clickable)
+    </header>
+    <main>
+        <div>
+            <span>
+
+                <h3>School Awards</h3>
+                (Divine Happy School)
+                <p><b>1st Prize,IT-Exhibition(Voice Assistant AI Robot)</b>
+                    <img src="../assets/it.jpg" alt="" height="100">
+                </p><br>
+                <p><b>2nd Prize Calligraphy Competition(2024-2025)</b>
+                    <img src="../assets/calligraphy.jpg" alt="" height="100">
+                </p> <br>
+                <p><b>3rd Prize Intersection Speech Competition</b>
+                    <img src="../assets/speech.jpg" alt="" height="100">
+                </p><br>
+                <p><b>Class 6 Academic Proficiency 1st Prize</b>
+                    <img src="../assets/6c.jpg" alt="" height="100">
+                </p><br>
+                <p><b> Class 5 Academic Proficiency 1st Prize</b>
+                    <img src="../assets/5c.jpg" alt="" height="100">
+                </p><br>
+                <p><b> Class 1 Fancy Dress Competition 1st Prize</b>
+
+                    <img src="../assets/fancy.jpg" alt="" height="100">
+                </p><br>
+                <p><b> Class 1 Drawing Competition2nd Prize</b>
+                    <img src="../assets/drawing.jpg" alt="" height="100">
+                </p>
+                <p><b>All medals and trophy</b>
+                    <img src="../assets/medal1.jpg" alt="" height="100">
+                </p>
+                <img src="../assets/medal2.jpg" alt="" height="100"></p>
+                <img src="../assets/trophy.jpg" alt="" height="100"></p>
+            </span>
+            <!-- This span should be in right side of upper span section -->
+            <span>
+                <h3>SOF Awards</h3>
+                <p><b>IMO(International Maths Olympiad) Certificate of Participation(Class 6)</b>with gold medal of
+                    excellence</p>
+                <img src="../assets/olym6.jpg" alt="" height="100">
+                <p><b>NSO(National Science Olympiad) Certificate of Participation(Class 6)</b>with gold medal of
+                    excellence</p>
+                <img src="../assets/olymscience6.jpg" alt="" height="100">
+                <p><b>IMO(International Maths Olympiad) Certificate of Participation(Class 4)</b>with gold medal of
+                    excellence</p>
+                <img src="../assets/olym4.jpg" alt="" height="100">
+                <p><b>Class 5 olympiad Prizes Images are not showing</b></p>
+                <p><b>All medals and trophy</b>
+                    <img src="../assets/medal1.jpg" alt="" height="100">
+                </p>
+                <img src="../assets/medal2.jpg" alt="" height="100"></p>
+                <img src="../assets/trophy.jpg" alt="" height="100"></p>
+            </span>
+
+
+        </div>
+        <!-- This div should be in bottom of upper div section -->
+        <div>
+            <h3>Computer Proficiency Acheivements</h3>
+            <p><b>Typing Mastery Certificate</b>
+                <img src="../assets/typing.png" alt="" height="140">
+            </p>
+
+
+        </div>
+        <div>
+            <h3>
+                My Academic Results
+            </h3>
+            <p><b>Class 7 term 1</b>
+                <img src="../assets/7mid.jpg" alt="" height="150">
+            </p>
+            <p><b>Class 6 Final</b>
+                <img src="../assets/6.jpg" alt="" height="150">
+            </p>
+            <p><b>Class 5 final</b>
+                <img src="../assets/5.jpg" alt="" height="150">
+            </p>
+            <p><b>Class 4 Final</b>
+                <img src="../assets/4.jpg" alt="" height="150">
+            </p>
+            <p><b>Class 2 Final</b>
+                <img src="../assets/2.jpg" alt="" height="150">
+            </p>
+            <p><b>Class 1 Final</b>
+                <img src="../assets/1.jpg" alt="" height="150">
+            </p>
+            <p><b>Class Nur Final</b>
+
+                <img src="../assets/kg.jpg" alt="" height="150">
+            </p>
+            <p><b>Class KG term 1</b>
+                <img src="../assets/kg2.jpg" alt="" height="150">
+            </p>
+           <p> <img src="../assets/nur.jpg" alt="" height="150">
+            <b>Class KG final</b></p>
+        </div>
+
+    </main>
+    <footer>
+        <hr>
+        <a href="https://dhsbgp.com" target="_blank"><img src="../assets/dhs.png" alt="" height="25">www.dhsbgp.com</a>
+        <hr>
+    </footer>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged View">
+</div>
+
+<script>
+    const images = document.querySelectorAll('main img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    images.forEach(img => {
+        img.onclick = () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        };
+    });
+
+    function closeLightbox() {
+        lightbox.style.display = 'none';
+    }
+</script>
+
+</body>
+
+</html>

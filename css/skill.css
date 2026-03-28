@@ -15,6 +15,7 @@ body {
 }
 
 /* ================= HEADER SECTION ================= */
+
 header {
   display: grid;
   grid-template-columns: 1.5fr 1fr; /* Text left, Paragraph right */
@@ -30,6 +31,7 @@ header {
   color: #d1d1e9;
   display: block;
 }
+
 
 header h1 {
   font-size: 48px;
